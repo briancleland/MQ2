@@ -1,0 +1,101 @@
+<!DOCTYPE>
+
+<!--html manifest="/manifest"-->
+
+<html>
+	<head>
+    
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="apple-touch-icon-precomposed" href="img/mq_icon.png">    
+    <link rel="apple-touch-startup-image" href="img/cover.png">  
+
+		<link rel="stylesheet" href="css/jquery.mob.css" />
+		<link rel="stylesheet" href="css/mournequest.css" />
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" />
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+		<link rel="stylesheet" href="css/leaflet.awesome-markers.css" />
+		<!--link rel="stylesheet" href="css/leaflet.label.css" /-->
+    
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.mob.js"></script>
+		<script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
+		<!--script src="js/leaflet.js"></script-->
+		<script src="js/quest.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/leaflet.awesome-markers.js"></script>    
+    
+    <!-- Stop iOS jumping 1px on transition -->
+    <script>$(function() { $.mobile.defaultHomeScroll = 0; }); </script>
+    
+	</head>
+	<body>
+    
+		<div data-role="page" id="home" data-theme="a" data-content-theme="a">
+  			<div data-role="header" data-position="fixed" data-theme="a">
+  				<h1>Newry & MourneQuest</h1>        
+  			</div>
+      
+  			<div data-role="content" id="content">
+          <img src="img/cobs.png" style="float:left;width:30%;padding:15px 15px 5px 5px"></img>
+  				<p>Welcome to the Newry and MourneQuest.</p>
+	        <p>I am Cobs the Clurichaun and I am in need of your help. The dreaded Shimnavore has captured my dearest 
+             friend Jack Turner and somehow, they have travelled through time all the way here to the City of the Yew - 
+             I believe you call it "Newry". But the trail has grown cold.</p>
+	        <p>I know Jack and I am sure he has left a trail through your wonderful city. I have a map but I am unsure where it leads.
+	           Will you join me on a journey and unlock the hidden secrets Newry holds?</p>
+  			</div>
+
+  			<div data-role="footer" data-theme="a" style="overflow:hidden;" data-position="fixed" data-tap-toggle="false" >
+  				<div data-role="navbar">
+  					<ul class="nav-mq">
+  						<li><a href="#home" id="home-button" data-icon="custom" data-transition="none" class="ui-btn-active ui-state-persist">Home</a></li>
+              <!-- <li><a href="#clues" id="clues-button" data-icon="custom" data-transition="none">Clues</a></li> -->
+  						<li><a href="#mapPage" id="map-button" data-icon="custom" data-transition="none">Map</a></li>
+  					</ul>
+  				</div><!-- /navbar -->
+  			</div><!-- /footer -->
+
+		</div>
+		
+		<!--div data-role="page" id="clues" data-theme="a" data-content-theme="a">
+      
+			<!--div data-role="header" data-position="fixed">
+				<h1>Newry & MourneQuest</h1>
+			</div>
+			
+      <!-- <ul id="clueList" data-role="listview" data-theme="a"></ul>
+      
+      <div data-role="footer" data-theme="a" style="overflow:hidden;" data-position="fixed" data-tap-toggle="false" >
+        <div data-role="navbar">
+          <ul class="nav-mq">
+            <li><a href="#home" id="home-button" data-icon="custom" data-transition="none">Home</a></li>
+            <li><a href="#clues" id="clues-button" data-icon="custom" data-transition="none" class="ui-btn-active ui-state-persist">Clues</a></li>
+            <li><a href="#mapPage" id="map-button" data-icon="custom" data-transition="none">Map</a></li>
+          </ul>
+        </div><!-- /navbar -->
+        <!--/div><!-- /footer -->
+    <!--/div> -->
+		
+		<div data-role="page" id="mapPage" data-theme="a" data-content-theme="a">
+			<div data-role="header" data-position="fixed">
+				<h1>Newry & MourneQuest</h1>        
+			</div>
+      
+     	<div class="text"></div> 
+        <div id="mapPlacement"></div>
+      
+			<div data-role="footer" style="overflow:hidden;" data-position="fixed" id="footer" data-tap-toggle="false" >
+				<div data-role="navbar">
+					<ul class="nav-mq">
+						<li><a href="#home" id="home-button" data-icon="custom" data-transition="none">Home</a></li>
+            <!-- <li><a href="#clues" id="clues-button" data-icon="custom" data-transition="none">Clues</a></li> -->
+						<li><a href="#mapPage" id="map-button" data-icon="custom" data-transition="none" class="ui-btn-active ui-state-persist">Map</a></li>
+					</ul>
+				</div>
+			</div>
+      
+		</div>
+	</body>
+</html>
